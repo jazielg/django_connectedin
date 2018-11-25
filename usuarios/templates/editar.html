@@ -1,0 +1,30 @@
+{% extends "layout_usuarios.html" %}
+
+{% block conteudo %}
+
+	<form class="form-signin" action="{% url 'alterar' %}" method="post">
+		<h2 class="form-signin-heading">Editar</h2>
+
+		{% csrf_token %}
+
+		<input class="form-control" type="text" name="nome" id="nome" placeholder="Nome" value="{{ dados.username }}" required>
+
+		<input class="form-control" type="text" name="email" id="email" placeholder="email" value="{{ dados.email }}" required>
+
+		<input class="form-control" type="password" name="senha" id="senha" placeholder="senha" value="{{ dados.password }}" required>
+
+		<input class="form-control" type="text" name="telefone" id="telefone" placeholder="telefone" value="{{ dados.perfil.telefone }}">
+
+		<input class="form-control" type="text" name="empresa" id="empresa" placeholder="empresa" value="{{ dados.perfil.empresa }}">
+
+		{% if form.errors %}
+			<div class="alert alert-danger">
+				{{ form.non_field_errors }}
+			</div>
+		{% endif %}
+
+		<input type="submit" name="submit" value="Registrar" class="btn btn-pimary">
+
+	</form>
+
+{% endblock %}
