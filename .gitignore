@@ -1,2 +1,7 @@
 # Banco de dados sqlite3 feito pelo Django
 db.sqlite3
+
+# Cache Python 3
+connectedin/__pycache__
+perfil/__pycache__
+usuarios/__pycache__
