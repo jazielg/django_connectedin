@@ -1,8 +1,8 @@
 # Django ConnectedIn
 
-Pequena rede social
+Pequena rede social desenvolvida em Python 3 no framework Django 2.1.3
 
-## Requesitos
+## Requisitos
 `Python 3.6.7`
 + **sudo apt install python3
 `Pip 9.0.1`
