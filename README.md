@@ -5,8 +5,10 @@ Pequena rede social desenvolvida em Python 3 no framework Django 2.1.3
 ## Requisitos
 `Python 3.6.7`
 + **sudo apt install python3**
+
 `Pip 9.0.1`
 + **sudo apt install python3-pip**
+
 `Django 2.1.3`
 + **pip3 install django==2.1.3**
 
