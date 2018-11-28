@@ -2,7 +2,4 @@
 db.sqlite3
 
 # Cache Python 3
-*/__pycache__
-*/*/__pycache__
 __pycache__/
-*.pyc
